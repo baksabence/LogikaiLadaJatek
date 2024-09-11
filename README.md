@@ -9,3 +9,7 @@ mai feladat: program terv + grafikus felület készitése
 
 Megoldás: Bronz ládában van a kincs.
 
+Gui kép:
+
+![gui kepernyokep](https://github.com/user-attachments/assets/6022c4a9-a4f2-4ae3-a756-a312e6d08291)
+

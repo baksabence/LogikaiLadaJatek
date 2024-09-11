@@ -7,3 +7,5 @@ bronzláda felirat: Az aranyláda hazudik!
 Készíts 1 git linket és 1 readme fileba oszd meg a feladat leírást és megoldást.
 mai feladat: program terv + grafikus felület készitése
 
+Megoldás: Bronz ládában van a kincs.
+

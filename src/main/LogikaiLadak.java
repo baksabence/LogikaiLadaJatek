@@ -232,7 +232,20 @@ public class LogikaiLadak extends javax.swing.JFrame {
     }//GEN-LAST:event_aranyLadaBtnActionPerformed
 
     private void ezustLadaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ezustLadaBtnActionPerformed
-        JOptionPane.showMessageDialog(rootPane, "Gratulálok, kinyitottad a kincsesládát!", "Nyertél!", JOptionPane.INFORMATION_MESSAGE);
+        int kincs = 1;
+        boolean nyitasAllapot = ezustLadaBtn.isSelected();
+        if(nyitasAllapot = true){
+            JOptionPane.showMessageDialog(rootPane, "Gratulálok, kinyitottad a kincsesládát!", "Nyertél!", JOptionPane.INFORMATION_MESSAGE);
+            kincs--;
+            nyitasAllapot = false;
+            if(nyitasAllapot == false){
+                JOptionPane.showMessageDialog(rootPane, "A válasz helyes, de a láda már üres!", "Mohó vagy!", HEIGHT);
+            }
+        }
+        
+        
+        
+        
     }//GEN-LAST:event_ezustLadaBtnActionPerformed
 
     /**

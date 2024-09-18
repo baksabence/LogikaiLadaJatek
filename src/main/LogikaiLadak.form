@@ -83,10 +83,8 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="ezustLadaBtn" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="bronzLadaBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="ezustLadaBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="bronzLadaBtn" min="-2" max="-2" attributes="0"/>
                   <Component id="aranyLadaBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
@@ -99,6 +97,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Kinyit&#xe1;s"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aranyLadaBtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="aranyNevLbl">
       <Properties>
@@ -143,11 +144,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Kinyit&#xe1;s"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ezustLadaBtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="bronzLadaBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Kinyit&#xe1;s"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aranyLadaBtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>

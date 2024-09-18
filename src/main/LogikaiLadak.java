@@ -4,6 +4,8 @@
  */
 package main;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BitóZalánSándor(SZF_
@@ -44,6 +46,11 @@ public class LogikaiLadak extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         aranyLadaBtn.setText("Kinyitás");
+        aranyLadaBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aranyLadaBtnActionPerformed(evt);
+            }
+        });
 
         aranyNevLbl.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         aranyNevLbl.setText("             Aranyláda");
@@ -58,8 +65,18 @@ public class LogikaiLadak extends javax.swing.JFrame {
         bronzNevLbl.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
         ezustLadaBtn.setText("Kinyitás");
+        ezustLadaBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ezustLadaBtnActionPerformed(evt);
+            }
+        });
 
         bronzLadaBtn.setText("Kinyitás");
+        bronzLadaBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aranyLadaBtnActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel1.setText("                                                       Logika ládajáték");
@@ -201,15 +218,22 @@ public class LogikaiLadak extends javax.swing.JFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(ezustLadaBtn)
-                        .addComponent(bronzLadaBtn))
+                    .addComponent(ezustLadaBtn)
+                    .addComponent(bronzLadaBtn)
                     .addComponent(aranyLadaBtn))
                 .addGap(29, 29, 29))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void aranyLadaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aranyLadaBtnActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "Rókarudi, a láda üres!", "Talán legközelebb!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_aranyLadaBtnActionPerformed
+
+    private void ezustLadaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ezustLadaBtnActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "Gratulálok, kinyitottad a kincsesládát!", "Nyertél!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_ezustLadaBtnActionPerformed
 
     /**
      * @param args the command line arguments

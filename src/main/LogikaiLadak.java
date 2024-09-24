@@ -225,12 +225,17 @@ public class LogikaiLadak extends javax.swing.JFrame {
     }//GEN-LAST:event_aranyLadaBtnActionPerformed
     
     private void ezustLadaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ezustLadaBtnActionPerformed
-        if (!kincsTalalt) {
-            JOptionPane.showMessageDialog(rootPane, "Gratulálok, kinyitottad a kincsesládát, tiéd a kincs!", "Nyertél!", JOptionPane.INFORMATION_MESSAGE);
-            kincsTalalt = true;
-        } else {
-            JOptionPane.showMessageDialog(rootPane, "Gratulálok, de a láda már üres!", "Mohó vagy!", JOptionPane.WARNING_MESSAGE);
-        }
+        int valasztas = JOptionPane.showConfirmDialog(rootPane, "Biztosan ki akarod nyitni a ládát?", "Most vagy soha", JOptionPane.YES_NO_OPTION);
+        if (valasztas == JOptionPane.YES_OPTION) {
+            if (!kincsTalalt) { 
+                JOptionPane.showMessageDialog(rootPane, "Gratulálok, kinyitottad a kincsesládát!", "Nyertél!", JOptionPane.INFORMATION_MESSAGE);
+                kincsTalalt = true; 
+            } else { 
+                JOptionPane.showMessageDialog(rootPane, "Gratulálok, de a láda már üres!", "Mohó vagy!", JOptionPane.WARNING_MESSAGE);
+            }
+        } else { 
+            JOptionPane.showMessageDialog(rootPane, "Nem nyitottad ki a ládát, igazi pancser!", "Gyenge jellem..", JOptionPane.INFORMATION_MESSAGE);
+    }
         
         
         
